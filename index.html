@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="overlay " onclick="closemodal()"></div>
+        <div class=" card">
+            <div class="photo"><img src="profile-image.webp" alt=""></div>
+            <div class="name">Love Babbar</div>
+            <div class="designation">Founder, Code Help</div>
+            <div class="buttonlist">
+                <button id="share" onclick="openMod()"><i class="fa-solid fa-share"></i> Share My Profile</button>
+                <button id="follow">Follow Me</button>
+            </div>
+        </div>
+
+        <!--modalactive part -->
+        <div class="modal">
+            <div class="first">
+                <div class="share-txt">Share My Profile</div>
+                <i class="fa-solid fa-xmark" onclick="closemodal()"></i>
+            </div>
+            <div class="second">Share this via</div>
+            <div class="third">
+                <div class="circle c1"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="circle c2"><i class="fa-brands fa-twitter"></i></div>
+                <div class="circle c3"><i class="fa-brands fa-instagram"></i></div>
+                <div class="circle c4"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="circle c5"><i class="fa-brands fa-telegram"></i></i></div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

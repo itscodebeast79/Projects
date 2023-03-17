@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    background-color: black;
+}
+
+img {
+    width: 160px;
+    border: 2px solid #ffffff1a;
+    border-radius: 100%;
+}
+
+.ball1 {
+    width: 13em;
+    height: 13em;
+    border-radius: 100%;
+    position: absolute;
+    transition: all;
+    animation-name: move;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    left: 25%;
+    top: 20px;
+    box-shadow: 0 0 50px #d84869;
+    background: linear-gradient(-25deg, #d84869, #f46641);
+}
+
+.ball2 {
+    width: 17em;
+    height: 17em;
+    border-radius: 100%;
+    position: absolute;
+    transition: all;
+    animation-name: move;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    left: 55%;
+    top: 55%;
+    box-shadow: 0 0 50px #5648d8;
+    background: linear-gradient(-25deg, #5648d8, #8641f4);
+}
+
+@keyframes move {
+    50% {
+        transform: translate(15px, 15px);
+    }
+
+    100% {
+        transform: translate(15px, 15px);
+    }
+}
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #ffffff1a;
+    backdrop-filter: blur(15px);
+    z-index: 1;
+    padding: 60px;
+    padding-bottom: 80px;
+    border-radius: 20px;
+    border: 1px solid rgba(185, 185, 185, 0.507);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.name {
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.designation {
+    color: rgba(214, 212, 212, 0.719);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+button {
+    color: white;
+    padding: 10px;
+    width: 150px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    margin-top: 40px;
+}
+
+button:hover {
+    background-color: white;
+    color: black
+}
+
+
+
+.overlay {
+    height: 100vh;
+    width: 100vw;
+    background-color: #5f5f5f83;
+    opacity: 0;
+    transition: all 1s;
+    z-index: 200;
+    transition-timing-function: ease-in;
+}
+
+.overlay-active {
+    opacity: 1;
+
+
+}
+
+.modal {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 45%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 4;
+    padding: 25px;
+    border-radius: 10px;
+
+    color: white;
+    background: #00000088;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ffffff88;
+    gap: 10px;
+    transition-duration: 1s;
+    opacity: 0;
+}
+
+.modal-active {
+    opacity: 1;
+}
+
+.fa-xmark {
+    cursor: pointer;
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ffffff88;
+}
+
+.second {
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.circle {
+
+    padding: 20px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+.third {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.c1 {
+    color: #1771e6;
+    border: 1px solid #1771e6;
+}
+
+.c1:hover {
+    background-color: #1771e6;
+    color: white;
+    border-bottom: 1px solid #ffffff88;
+}
+
+.c2 {
+    color: #1c99e6;
+    border: 1px solid #1c99e6;
+}
+
+.c2:hover {
+    background-color: #1c99e6;
+    color: white;
+    border-bottom: 1px solid #ffffff88;
+}
+
+.c3 {
+    color: #cb2770;
+    border: 1px solid #cb2770;
+}
+
+.c3:hover {
+    background-color: #cb2770;
+    color: white;
+    border-bottom: 1px solid #ffffff88;
+}
+
+.c4 {
+    color: #2fe664;
+    border: 1px solid #2fe664;
+}
+
+.c4:hover {
+    background-color: #2fe664;
+    color: white;
+    border-bottom: 1px solid #ffffff88;
+}
+
+.c5 {
+    color: #0081c2;
+    border: 1px solid #0081c2;
+}
+
+.c5:hover {
+    background-color: #0081c2;
+    color: white;
+    border-bottom: 1px solid #ffffff88;
+}
